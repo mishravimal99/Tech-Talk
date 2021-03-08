@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">My Chulbul</string>
-    <string name="hello_chulbul">Hello Chulbul!</string>
-    <string name="hi_bulbul">Hi Bulbul</string>
-    <string name="enter_email">Enter Email</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="login">Login</string>
-    <string name="reset_password">Reset Password</string>
-</resources>
