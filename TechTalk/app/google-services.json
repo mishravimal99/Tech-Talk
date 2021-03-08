@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742517509666",
+    "project_id": "tech-talk-52d4f",
+    "storage_bucket": "tech-talk-52d4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742517509666:android:05ee8645914724f65f047b",
+        "android_client_info": {
+          "package_name": "com.example.techtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742517509666-15fksltfbs7t23sk5aioc0r6eft9in23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyT9jxjZyH9DEpzRRqEY4XbzXQoOavVrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742517509666-15fksltfbs7t23sk5aioc0r6eft9in23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
