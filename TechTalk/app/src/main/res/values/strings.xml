@@ -14,4 +14,10 @@
     <string name="donthave_account">Don\'t have account?</string>
     <string name="failed_to_update_profile">Failed to update profile : %1$s</string>
     <string name="permission_required">Access permission is required</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="remove_picture">Remove Picture</string>
+    <string name="photo_removed_successfully">Photo Removed Successfully</string>
+    <string name="profile">Profile</string>
 </resources>

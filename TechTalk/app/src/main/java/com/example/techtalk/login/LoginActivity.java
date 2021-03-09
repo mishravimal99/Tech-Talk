@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.techtalk.MainActivity;
 import com.example.techtalk.R;
 import com.example.techtalk.signup.SignupActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -48,6 +49,8 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                            finish();
 
                         }
                         else{
