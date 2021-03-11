@@ -11,12 +11,14 @@ import android.widget.Toast;
 
 import com.example.techtalk.MainActivity;
 import com.example.techtalk.R;
+import com.example.techtalk.password.ResetPasswordActivity;
 import com.example.techtalk.signup.SignupActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     private TextInputEditText etEmail, etPassword;
@@ -27,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         etEmail=findViewById(R.id.etEmail);
         etPassword=findViewById(R.id.etPassword);
     }
@@ -59,6 +62,21 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
 
+        }
+    }
+    public void tvResetPasswordClick(View view){
+        startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+    }
+
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+        FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
+        if(firebaseUser!=null){
+            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+            finish();
         }
     }
 }

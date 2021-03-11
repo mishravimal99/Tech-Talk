@@ -21,6 +21,7 @@ import com.bumptech.glide.Glide;
 import com.example.techtalk.Common.NodeNames;
 import com.example.techtalk.R;
 import com.example.techtalk.login.LoginActivity;
+import com.example.techtalk.password.ChangePasswordActivity;
 import com.example.techtalk.signup.SignupActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -284,5 +285,8 @@ public void btnSaveClick(View view){
                 }
             }
         });
+    }
+    public void btnChangePasswordClick(View view){
+        startActivity(new Intent(ProfileActivity.this, ChangePasswordActivity.class));
     }
 }
