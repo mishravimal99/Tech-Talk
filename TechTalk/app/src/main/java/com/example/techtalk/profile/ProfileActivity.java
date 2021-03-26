@@ -41,7 +41,7 @@ import java.util.HashMap;
 public class ProfileActivity extends AppCompatActivity {
     private TextInputEditText etEmail, etName;
     private String email, name;
-
+    private View progressBar;
     private ImageView ivProfile;
     private FirebaseUser firebaseUser;
     private DatabaseReference databaseReference;
@@ -64,6 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
 
+        progressBar=findViewById(R.id.progressBar);
         if(firebaseUser!=null)
         {
             etName.setText(firebaseUser.getDisplayName());
@@ -174,6 +175,7 @@ public void btnSaveClick(View view){
     }
 
     private void removePhoto(){
+        progressBar.setVisibility(View.VISIBLE);
         UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
                 .setDisplayName(etName.getText().toString().trim())
                 .setPhotoUri(null)
@@ -182,6 +184,7 @@ public void btnSaveClick(View view){
         firebaseUser.updateProfile(request).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
+                progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
                     String userID=firebaseUser.getUid();
                     databaseReference= FirebaseDatabase.getInstance().getReference().child(NodeNames.USERS);
@@ -209,10 +212,15 @@ public void btnSaveClick(View view){
     }
     private void updateNameAndPhoto(){
         String strFileName= firebaseUser.getUid() + ".jpg";
+
         final  StorageReference fileRef = fileStorage.child("images/"+ strFileName);
+
+        progressBar.setVisibility(View.VISIBLE);
+
         fileRef.putFile(localFileUri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
                     fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
@@ -258,12 +266,14 @@ public void btnSaveClick(View view){
     }
 
     private void updateOnlyName(){
+        progressBar.setVisibility(View.VISIBLE);
         UserProfileChangeRequest request=new UserProfileChangeRequest.Builder().
                 setDisplayName(etName.getText().toString().trim()).build();
 
         firebaseUser.updateProfile(request).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
+                progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()){
                     String userID=firebaseUser.getUid();
                     databaseReference= FirebaseDatabase.getInstance().getReference().child(NodeNames.USERS);

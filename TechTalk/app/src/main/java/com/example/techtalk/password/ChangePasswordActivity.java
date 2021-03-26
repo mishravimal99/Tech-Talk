@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class ChangePasswordActivity extends AppCompatActivity {
 
+    private View progressBar;
     private TextInputEditText etPassword,etConfirmPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,10 @@ public class ChangePasswordActivity extends AppCompatActivity {
         etPassword=findViewById(R.id.etPassword);
         etConfirmPassword=findViewById(R.id.etConfirmPassword);
 
+        progressBar=findViewById(R.id.progressBar);
+
     }
+
     public void btnChangePasswordClick(View view){
         String password=etPassword.getText().toString().trim();
         String confirmPassword=etConfirmPassword.getText().toString().trim();
@@ -40,6 +44,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
             etConfirmPassword.setError(getString(R.string.password_mismatch));
         }
         else{
+            progressBar.setVisibility(View.VISIBLE);
             FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
             FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
 
@@ -47,6 +52,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                 firebaseUser.updatePassword(password).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
+                        progressBar.setVisibility(View.GONE);
                         if(task.isSuccessful()){
                             Toast.makeText(ChangePasswordActivity.this,
                                     R.string.password_changed_successfully,Toast.LENGTH_SHORT).show();

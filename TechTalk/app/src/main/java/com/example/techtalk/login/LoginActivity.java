@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.techtalk.Common.Util;
 import com.example.techtalk.MainActivity;
+import com.example.techtalk.MessageActivity;
 import com.example.techtalk.R;
 import com.example.techtalk.password.ResetPasswordActivity;
 import com.example.techtalk.signup.SignupActivity;
@@ -23,7 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
     private TextInputEditText etEmail, etPassword;
     private String email, password;
-
+    private View progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +34,12 @@ public class LoginActivity extends AppCompatActivity {
 
         etEmail=findViewById(R.id.etEmail);
         etPassword=findViewById(R.id.etPassword);
+        progressBar=findViewById(R.id.progressBar);
     }
     public void tvSignupClick(View v){
         startActivity(new Intent(this, SignupActivity.class));
     }
+
     public void btnLoginClick(View v){
         email=etEmail.getText().toString().trim();
         password=etPassword.getText().toString().trim();
@@ -47,20 +51,27 @@ public class LoginActivity extends AppCompatActivity {
         }
         else
             {
-                FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
-                firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                            finish();
+                if(Util.connectionAvailable(this)) {
+                    progressBar.setVisibility(View.VISIBLE);
+                    FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+                    firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            progressBar.setVisibility(View.GONE);
+                            if (task.isSuccessful()) {
+                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                finish();
 
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Login Failed : " +
+                                        task.getException(), Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else{
-                            Toast.makeText(LoginActivity.this,"Login Failed : "+task.getException(),Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                    });
+                }
+                else{
+                    startActivity(new Intent(LoginActivity.this, MessageActivity.class));
+                }
 
         }
     }
