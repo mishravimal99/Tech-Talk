@@ -15,23 +15,23 @@ public class SplashActivity extends AppCompatActivity {
 
     private ImageView ivSplash;
     private TextView tvSplash;
-    private Animation animation;
+    private Animation animation1, animation2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        //to hide the action bar in splash screen
         if(getSupportActionBar()!=null){
             getSupportActionBar().hide();
         }
 
         ivSplash = findViewById(R.id.ivSplash);
         tvSplash = findViewById(R.id.tvSplash);
-        animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
+        animation1 = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
+        animation2 = AnimationUtils.loadAnimation(this, R.anim.splash_name_animation);
 
-        animation.setAnimationListener(new Animation.AnimationListener() {
+        animation1.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
@@ -53,7 +53,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        ivSplash.startAnimation(animation);
-        tvSplash.startAnimation(animation);
+        ivSplash.startAnimation(animation1);
+        tvSplash.startAnimation(animation2);
     }
 }

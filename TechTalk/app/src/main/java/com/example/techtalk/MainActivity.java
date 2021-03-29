@@ -12,6 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.techtalk.profile.ProfileActivity;
 import com.google.android.material.tabs.TabLayout;
@@ -102,5 +103,34 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private boolean doubleBackPressed= false;
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+
+        if(tabLayout.getSelectedTabPosition()>0){
+            tabLayout.selectTab(tabLayout.getTabAt(0));
+        }
+        else{
+            if(doubleBackPressed){
+                finishAffinity();
+            }
+            else{
+                doubleBackPressed=true;
+                Toast.makeText(this,getString(R.string.press_back_to_exit),Toast.LENGTH_SHORT).show();
+                //delay
+                android.os.Handler handler=new android.os.Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        doubleBackPressed=false;
+                    }
+                },2000);
+
+            }
+
+        }
     }
 }
