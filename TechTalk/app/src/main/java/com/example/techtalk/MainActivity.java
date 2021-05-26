@@ -1,7 +1,5 @@
 package com.example.techtalk;
 
-import android.content.Intent;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,18 +7,21 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.techtalk.findfriends.FindFriendsFragment;
 import com.example.techtalk.profile.ProfileActivity;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Object Menu;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.vpMain);
 
         setViewPager();
+
     }
 
     class Adapter extends FragmentPagerAdapter {
@@ -68,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
+        // Resuming the current fragment
         Adapter  adapter = new Adapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(adapter);
 
@@ -90,47 +93,53 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
+    // converting menu xml file into visible view
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main,menu);
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
+    // handling clicks on this view
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id=item.getItemId();
-        if(id==R.id.mnuProfile){
+        int id = item.getItemId();
+
+        if(id == R.id.mnuProfile){
             startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private boolean doubleBackPressed= false;
+    public boolean doubleBackPressed = false;
+
     @Override
     public void onBackPressed() {
-        //super.onBackPressed();
+        // super.onBackPressed();
 
+        // Not on chat tab
         if(tabLayout.getSelectedTabPosition()>0){
             tabLayout.selectTab(tabLayout.getTabAt(0));
         }
-        else{
+        else {
             if(doubleBackPressed){
+                // double pressed exit
                 finishAffinity();
             }
-            else{
-                doubleBackPressed=true;
-                Toast.makeText(this,getString(R.string.press_back_to_exit),Toast.LENGTH_SHORT).show();
-                //delay
-                android.os.Handler handler=new android.os.Handler();
+            else {
+                // on chat screen
+                doubleBackPressed = true;
+                Toast.makeText(this, R.string.press_back_to_exit, Toast.LENGTH_SHORT).show();
+                // delay
+                android.os.Handler handler = new android.os.Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        doubleBackPressed=false;
+                        doubleBackPressed = false;
                     }
-                },2000);
-
+                }, 3000);
             }
-
         }
+
     }
+
 }

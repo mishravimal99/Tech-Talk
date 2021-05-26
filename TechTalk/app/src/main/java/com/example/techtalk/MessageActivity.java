@@ -70,7 +70,6 @@ public class MessageActivity extends AppCompatActivity {
         }
     }
     public void btnCloseClick(View view) {
-        //to close the whole application
         finishAffinity();
     }
 }

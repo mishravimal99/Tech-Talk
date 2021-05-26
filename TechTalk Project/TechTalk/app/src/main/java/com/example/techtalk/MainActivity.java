@@ -12,8 +12,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.techtalk.chats.ChatFragment;
 import com.example.techtalk.findfriends.FindFriendsFragment;
 import com.example.techtalk.profile.ProfileActivity;
+import com.example.techtalk.requests.RequestsFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {

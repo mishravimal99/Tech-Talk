@@ -71,7 +71,8 @@ public class FindFriendsFragment extends Fragment {
         // Getting all users
         databaseReference = FirebaseDatabase.getInstance().getReference().child(NodeNames.USERS);
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        databaseReferenceFriendRequests = FirebaseDatabase.getInstance().getReference().child(NodeNames.FRIEND_REQUESTS).child(currentUser.getUid());
+        databaseReferenceFriendRequests = FirebaseDatabase.getInstance().getReference().child(NodeNames.FRIEND_REQUESTS)
+                .child(currentUser.getUid());
 
         tvEmptyFriendsList.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.VISIBLE);
@@ -83,12 +84,13 @@ public class FindFriendsFragment extends Fragment {
                 findFriendModelList.clear();
                 for(DataSnapshot ds : snapshot.getChildren()){
                     final String userId = ds.getKey();
-                    if(userId.equals(currentUser.getUid())){
-                        return;
-                    }
+
+                    if(userId.equals(currentUser.getUid()))
+                        continue;
+
                     if(ds.child(NodeNames.NAME).getValue()!=null){
                         final String fullName = ds.child(NodeNames.NAME).getValue().toString();
-                        final String photoName = ds.child(NodeNames.PHOTO).getValue().toString();
+                        final String photoName = ds.child(NodeNames.PHOTO).getValue()!=null? ds.child(NodeNames.PHOTO).getValue().toString():"";
 
                         databaseReferenceFriendRequests.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
@@ -121,10 +123,9 @@ public class FindFriendsFragment extends Fragment {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(getContext(), getContext().getString(R.string.failed_to_fetch_friends), Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(getContext(),R.string.failed_to_fetch_friends, Toast.LENGTH_SHORT).show();
             }
         });
     }

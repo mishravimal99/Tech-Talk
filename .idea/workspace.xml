@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d3ac426-4367-4012-b72a-40251921607c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/chats/ChatFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/Common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/Common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/Common/NodeNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/Common/NodeNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/RequestsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/requests/RequestsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/findfriends/FindFriendAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/findfriends/FindFriendAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/findfriends/FindFriendsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/java/com/example/techtalk/findfriends/FindFriendsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/find_friends_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/find_friends_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_find_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_find_friends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_requests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/fragment_requests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/friend_request_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/layout/friend_request_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk Project/TechTalk/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/Common/NodeNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/Common/NodeNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/Common/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/Common/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/FindFriendsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/MessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/MessageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/password/ChangePasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/password/ChangePasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/password/ResetPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/password/ResetPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/profile/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/profile/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/signup/SignupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/java/com/example/techtalk/signup/SignupActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable-v24/default_profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable/card_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable/ic_chat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/drawable/ic_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_change_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_reset_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/layout/activity_signup1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/menu/menu_picture.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/java/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/anim/splash_animation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/anim/splash_animation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable-v24/default_profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable-v24/ic_loginlogo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/card_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/card_border.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_friends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_request.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/drawable/ic_request.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_reset_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_reset_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_signup1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/custom_progressbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/custom_progressbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_find_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_find_friends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_requests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/fragment_requests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_findfriends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_findfriends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_requests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/layout/tab_requests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/chat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechTalk/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/TechTalk/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qHcD6IYppmllUmT2NkIBRS8ZEH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d3ac426-4367-4012-b72a-40251921607c" name="Default Changelist" comment="" />
+      <created>1616739833221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616739833221</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1616935022851">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1616935022851" />
+  </component>
+</project>

@@ -20,9 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            app:tabIndicatorColor="@color/white" />
+            app:tabIndicatorColor="@color/colorPrimaryDark" />
 
-        <androidx.viewpager2.widget.ViewPager2
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/vpMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
